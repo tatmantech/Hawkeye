@@ -1,0 +1,22 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+     - "5000:5000"
+    links:
+     - redis
+     - mongo
+    depends_on:
+     - redis
+     - mongo
+  redis:
+    image: "redis:alpine"
+  mongo:
+    image: mongo
+    container_name: "mongo"
+    restart: always
+    volumes:
+     - ./data/db/mongo:/data/db
+    ports:
+     - "27020:27017"
