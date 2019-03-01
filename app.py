@@ -1,3 +1,5 @@
+# literally the default app for docker-compose testing
+
 import time
 
 import redis
