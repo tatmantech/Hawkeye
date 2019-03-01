@@ -1,3 +1,24 @@
+### 2018-10-12 v3.0.0 incompatibility update
+- Search mode is switched to API, support for adding multiple GitHub users, API quota visualization
+- Configure visualization to remove configuration files
+- Crontab switches to a lightweight task queue Huey, the task cycle can be customized
+- Support for Docker deployment
+- Support batch ignore
+- Reptile task status, result record display
+- Optimize the analysis of affected assets
+- Refactor email alerts, add spike alerts
+### 2018-04-19 v2.0.0
+- Add Basic authentication, you must re-configure according to the new config.ini.example
+- User experience optimization, support for multiple filtering methods
+- Reptile task status, result record display
+- Parsing affected assets
+- Add a switch to control whether to grab
+- Email alert aggregation
+### 2018.03.14
+
+- Due to a regular match in spider.py, the login failed recently. Please pull the new code.
+
+
 ## 更新记录
 - 2018-10-12 v3.0.0 非兼容性更新
     - 搜索方式切换成API，支持添加多GitHub用户，API配额可视化
